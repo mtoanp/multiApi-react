@@ -1,28 +1,27 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/giphy.gif";
 import { useAuth } from "../../contexts/AuthContext";
 import ThemeControl from "../../components/ThemeControl/ThemeControl";
 
 import "./NavBar.scss";
 
 function NavBar({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const { isAuthenticated, setIsAuthenticated, userName } = useAuth();
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchQuery(e.target.value);
   };
 
   const handleSearch = () => {
-    onSearch(searchTerm);
-    setSearchTerm("");
+    onSearch(searchQuery);
+    setSearchQuery("");
   };
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      onSearch(searchTerm);
-      setSearchTerm("");
+      onSearch(searchQuery);
+      setSearchQuery("");
     }
   };
 
@@ -41,10 +40,10 @@ function NavBar({ onSearch }) {
       <div className="nav-l">
         <Link to="/">
           <div className="logo d-none d-xl-inline">
-            <img src={Logo} alt="MultiAPI Logo" />
+            <div className="nav-logo">MultiAPI</div>
           </div>
         </Link>
-        <div className="nav-logo">MultiAPI</div>
+
         <ThemeControl />
       </div>
 
@@ -94,7 +93,7 @@ function NavBar({ onSearch }) {
           <input
             type="text"
             placeholder="Rechercher une ville..."
-            value={searchTerm}
+            value={searchQuery}
             onChange={handleSearchChange}
             onKeyDown={handleKeyPress}
           />

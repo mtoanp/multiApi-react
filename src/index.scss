@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 * {
   margin: 0;
@@ -9,25 +9,32 @@
 body {
   width: 100vw;
   background-color: #ddd;
-  overflow-y: auto; 
-  background: bottom left repeat-x fixed url('./assets/images/bgs/m2.png');
+  overflow-y: auto;
+  background: bottom left repeat-x fixed url("./assets/images/bgs/m2.png");
 }
 
 #root {
   width: 100%;
   max-width: 1200px;
-  min-height: 100vh; 
+  min-height: 100vh;
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  // color: #333;
+}
+
 @media screen and (max-width: 1200px) {
-  body, #root {
+  body,
+  #root {
     font-size: 0.9em; /* Ajustez la taille de la police pour les écrans plus petits */
   }
 }
 
 @media screen and (max-width: 768px) {
-  body, #root {
+  body,
+  #root {
     font-size: 0.8em; /* Ajustez davantage pour les écrans encore plus petits */
   }
 }
@@ -37,7 +44,7 @@ body {
     font-size: 0.7em;
     #root {
       margin: 0 auto;
-      width: $w; 
+      width: $w;
     }
   }
 }
