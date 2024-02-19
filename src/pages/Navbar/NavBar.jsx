@@ -30,11 +30,12 @@ function NavBar({ onSearch }) {
     localStorage.removeItem("isAuthenticated");
   };
 
-  const backgroundImage = "../../src/assets/images/sun.jpg";
+  // const backgroundImage = "../../src/assets/images/sun.jpg";
   return (
     <nav
       className="navbar navbar-expand-xl"
-      style={{ background: `center url(${backgroundImage})` }}>
+      // style={{ background: `center url(${backgroundImage})` }}
+    >
       {/* <nav className="navbar navbar-expand-xl" style={{ background: `url(${backgroundImage}) !important` }}> */}
       {/* // <nav className="navbar navbar-expand-xl" style={{ background: "url('../../assets/images/sun.jpg') !important" }}> */}
       <div className="nav-l">

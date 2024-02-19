@@ -5,7 +5,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ddd;
+  background-color: #292940;
+  color: white;
   padding: 0.3em !important;
   // padding: 0 $p !important;
   // background-color: $bg-nav;
@@ -44,14 +45,14 @@ nav {
       text-decoration: none;
       font-family: $f-art;
       font-size: 1.5em;
-      color: rgb(20, 19, 19);
+      color: #bdb9b9;
       margin-left: $p;
     }
     .links {
       a {
         margin: 0 10px;
         text-decoration: none !important;
-        color: #333;
+        color: #bdb9b9;
         transition: color 0.3s ease;
         &:hover {
           color: #007bff;
@@ -67,6 +68,7 @@ nav {
   button {
     padding: 5px 12px;
     background-color: #007bff;
+    margin-left: 1em;
     color: white;
     border: none;
     border-radius: 4px;
