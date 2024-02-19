@@ -1,0 +1,14 @@
+@import '../../variables';
+
+.population {
+  font-family: $f-art;
+  .c-card {
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    p {
+      margin: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #212529; // Arrière-plan sombre pour un look futuriste
+
+  .contact-form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3); // Ombre lumineuse
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px); // Légère élévation lors du survol
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 1rem;
+
+        label {
+          font-size: 1rem;
+          color: #007bff; // Couleur bleue lumineuse
+          margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+          padding: 0.75rem;
+          border: 1px solid #007bff; // Bordure bleue
+          border-radius: 0.5rem;
+          background-color: #2c3034; // Fond sombre pour les champs de saisie
+          color: #fff; // Texte blanc
+
+          &:focus {
+            border-color: #66afe9;
+            box-shadow: 0 0 0 0.2rem rgba(102, 175, 233, 0.6);
+            background-color: #3e444a; // Fond un peu plus clair lors du focus
+          }
+        }
+
+        textarea.form-control {
+          height: 150px;
+        }
+      }
+
+      .btn-primary {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #007bff; // Bouton bleu
+        color: #fff;
+        font-size: 1rem;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+          transform: scale(1.05); // Grandissement du bouton
+        }
+      }
+    }
+
+    .message {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+      transition: opacity 0.3s;
+
+      &.success {
+        background-color: #28a745;
+      }
+
+      &.error {
+        background-color: #dc3545;
+      }
+    }
+  }
+
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    a {
+      margin: 0 10px;
+      font-size: 2rem;
+      color: #007bff;
+      transition: color 0.3s, transform 0.3s;
+
+      &:hover {
+        color: #0056b3;
+        transform: scale(1.1); // Grandissement des icônes
+      }
+    }
+  }
+}

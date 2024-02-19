@@ -1,0 +1,43 @@
+@import '../../variables';
+       
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.unsplash {
+  padding-bottom: 70px !important;
+  @media screen and (min-width: $xl) {
+  }
+  &.image-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    border-radius: $b-radius;
+
+    .image-set {
+      display: flex;
+      flex-wrap: nowrap;
+      animation: scrollImages 30s linear infinite;
+
+      img {
+        flex: 0 0 auto;
+        margin-right: 10px;
+        width: 300px;
+        height: 150px;
+        margin: 0 $p;
+        object-fit: cover;
+        border-radius: $b-radius !important;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

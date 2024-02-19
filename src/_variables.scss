@@ -1,0 +1,35 @@
+// Break points
+// Breakpoint	Class infix	Dimensions bootstrap
+// X-Small	None	<576px
+// Small	sm	≥576px
+// Medium	md	≥768px
+// Large	lg	≥992px
+// Extra large	xl	≥1200px
+// Extra extra large	xxl	≥1400px
+
+$sm: 576px;
+$md: 768px;
+$lg: 1200px; 
+$xl: 1920px;
+
+// Déclaration des variables
+// $w: 1200px;
+$w: 1000px;
+$p: 1em;
+$p-m: 1.5em;
+
+// Border
+$b: 1px solid #ddd;
+$b-radius: 10px;
+$shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Colors
+$c-white: white;
+$bg-nav: rgb(107 150 201 / 50%); // Semi-transparent
+$bg-color: rgba(249, 249, 249, 0.5); // Semi-transparent
+
+$bg-light: white;
+$bg-dark: black;
+
+// Fonts
+$f-art: 'Dancing Script', cursive;

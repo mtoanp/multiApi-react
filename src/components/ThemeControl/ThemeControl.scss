@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.App > .theme-control {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    i {
+        font-size: 4em;
+        color: aqua;
+    }
+    z-index: 88;
+}
+
+nav .theme-control {
+    position: relative;
+    background-color: transparent !important;
+    i {
+        font-size: 1.5em;
+        color: rgb(18, 20, 20);
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .App > .theme-control {
+        display: block;
+    }
+}
+  

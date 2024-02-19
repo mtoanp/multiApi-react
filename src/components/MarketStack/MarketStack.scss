@@ -1,0 +1,45 @@
+@import '../../variables';
+
+.market-stack {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  p {
+    &.dynamic {
+      animation: colorChange 5s infinite;
+    }
+    .up {
+      color: green;
+    }
+  
+    .down {
+      color: red;
+    }
+  }
+
+  @keyframes colorChange {
+    0% { background-color: white; }
+    50% { background-color: #eef2f7; }
+    100% { background-color: white; }
+  }
+
+  .c-card {
+    p {
+      padding: 0.3em;
+      &:first {
+        font-weight: bold;
+      }
+    }
+    &.loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (min-width: $xl) {
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+  

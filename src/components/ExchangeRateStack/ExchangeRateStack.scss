@@ -1,0 +1,41 @@
+@import '../../variables';
+
+.exchange-component {
+    .exchange-list {
+        min-height: 150px;
+        height: 150px; // Hauteur fixe pour afficher seulement 4 éléments
+        overflow-y: hidden; // Activer le défilement vertical
+        list-style: none;
+        padding: 0 !important;
+        &.loading {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+        }
+        li {
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $xl) {
+    .exchange-component {
+        .exchange-list {
+            max-height: 200px; // Hauteur fixe pour afficher seulement 4 éléments
+            li {
+                padding: 5px;
+                border-bottom: 1px solid #ddd;
+    
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+  

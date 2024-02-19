@@ -1,0 +1,19 @@
+@import '../../variables';
+
+// Styles pour le composant App
+.content {
+  .c-col {
+    .map-container {
+      height: 100%;
+      .leaflet-container {
+        border-radius: $b-radius;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .map-container {
+    margin: 2em 0;
+  }
+}

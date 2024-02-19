@@ -1,0 +1,52 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  width: 100vw;
+  background-color: #ddd;
+  overflow-y: auto; 
+  background: bottom left repeat-x fixed url('./assets/images/bgs/m2.png');
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh; 
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  body, #root {
+    font-size: 0.9em; /* Ajustez la taille de la police pour les écrans plus petits */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body, #root {
+    font-size: 0.8em; /* Ajustez davantage pour les écrans encore plus petits */
+  }
+}
+
+@media screen and (min-width: $lg) and (max-width: $xl) {
+  body {
+    font-size: 0.7em;
+    #root {
+      margin: 0 auto;
+      width: $w; 
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    #root {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
